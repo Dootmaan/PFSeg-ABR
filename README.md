@@ -1,7 +1,7 @@
 # PFSeg-ABR
 Patch-Free 3D Segmentation with Adaptive Boundary Refinement
 
-This repo is an extension of [PFSeg](https://github.com/Dootmaan/PFSeg). We added a boundary refinement stage to the coarse output of PFSeg. It uses the original HR image patch cropped from the location of the generated mask, and the refinement is conducted on the basis of the output. To keep the spacing information, we designed a dynamic extending strategy which adaptively calculate the number of voxels needed to be extended. Since the computational cost of ABR varies with different datasets and voxel extending strategy, it is espcially recommended for small objects segmentation. ~~More details and codes will be released upon paper publication.~~
+This repo is an extension of [PFSeg](https://github.com/Dootmaan/PFSeg). We added a boundary refinement stage to the coarse output of PFSeg. It uses the original HR image patch cropped from the location of the generated mask, and the refinement is conducted on the concatnation of the output and the coarse mask. To keep the spacing information, we designed a dynamic extending strategy which adaptively calculate the number of voxels needed to be extended. Since the computational cost of ABR varies with different datasets and voxel extending strategy, it is espcially recommended for small objects segmentation. ~~More details and codes will be released upon paper publication.~~
 
 We have changed our research goal and decide not to focus on ABR. The code still will be released. ABR actually works for all the patch-free or patch-based methods and can be viewed as a finetuning precedure. We are sorry that this repo may not receive further updates.
 
