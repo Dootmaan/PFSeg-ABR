@@ -5,7 +5,7 @@ This repo is an extension of [PFSeg](https://github.com/Dootmaan/PFSeg). We adde
 
 We have changed our research goal and decide not to focus on ABR. The code still will be released. ABR actually works for all the patch-free or patch-based methods and can be viewed as a finetuning precedure. We are sorry that this repo may not receive further updates.
 
-We did some simple format changing before realeasing the code. The modified code has NOT been tested so it may has potential errors. Feel free to ask us any questions in the issues, and we will try our best to answer. Not that the default number of ABR extending voxels is 64 currently, which is fine for BRATS2020 but may cause OOM for other datasets.
+We did some simple format changing before realeasing the code. The modified code has NOT been tested so it may has potential errors. Feel free to ask us any questions in the issues, and we will try our best to answer. Note that the default number of ABR extending voxels is 64 currently, which is fine for BRATS2020 but may cause OOM for other datasets.
 
 ## 1. Prepare your dataset
 Please follow the instructions on http://braintumorsegmentation.org/ to get your copy of the BRATS2020 dataset. 
